@@ -3,14 +3,13 @@ import Checkbox from "./Checkbox";
 import Dropdown from "./Dropdown";
 import axios from "axios";
 
-
 export default function Landing (props) {
 
   const [isTeam, setIsTeam] = useState('option1');
   const [player,setPlayer] = useState('');
   const [team,setTeam] = useState('');
   let dropdisable 
-  let buttonEnable 
+  let buttonEnable
 
   if(isTeam === "option1"){
     dropdisable = true;
@@ -73,7 +72,7 @@ export default function Landing (props) {
             />
           </div>
           <div className="custom-btn">
-            <button type="button" className="btn btn-light" disabled={!buttonEnable} onClick = {handleSubmit}>
+            <button type="button" className="btn btn-light animated zoomIn" disabled={!buttonEnable} onClick = {handleSubmit}>
               Start Game
             </button>
           </div>
