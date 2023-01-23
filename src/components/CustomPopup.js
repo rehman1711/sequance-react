@@ -20,7 +20,6 @@ export default function CustomPopup() {
       >
         Launch Popup
       </button>
-adsfasdfsdafsdafds
       <div
         className="modal fade"
         id="staticBackdrop"
